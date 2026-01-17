@@ -1,0 +1,100 @@
+/* ===============================
+   Popular Collection Section
+================================ */
+.popular-collection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.popular-collection h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* ===============================
+   Card Grid Layout
+================================ */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* ===============================
+   Card Design
+================================ */
+.card {
+  display: grid;
+  grid-template-rows: 200px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ===============================
+   Card Image
+================================ */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===============================
+   Card Content
+================================ */
+.card-content {
+  padding: 1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+/* Title */
+.card-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Price */
+.price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e02c6d;
+}
+
+/* ===============================
+   Rating
+================================ */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.rating i {
+  color: #fb8200;
+}
+
+.rating span {
+  margin-left: 0.4rem;
+  color: #555;
+}
+
+/* ===============================
+   Description
+================================ */
+.card-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
